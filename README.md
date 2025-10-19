@@ -2,14 +2,16 @@
 
 ### Activate backend
 
-`cd /dubhacks252/guyAi/guy/backend`
+`cd /dubhacks252/guyAi/guy/backend` <br>
 
-Go to Google Gemini API Quick Start up and create a new API Key. 
-
+Go to Google Gemini API Quick Start up and create a new API Key. <br>
 Then paste this command into your terminal replace YOUR_API_KEY_HERE with it.
 
-MacOS command:
-`export GEMINI_API_KEY="YOUR_API_KEY_HERE"` 
+MacOS: <br>
+`export GEMINI_API_KEY="YOUR_API_KEY_HERE"` <br>
+
+Then paste this command
+<br>`python3 app.py` <br><br>
 
 
 
