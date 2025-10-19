@@ -42,14 +42,17 @@ function Insights() {
   <div className="insights-grid">
     <div className="metric-box">
         <h2>Dynamic Pricing</h2>
-        {data.dynamic_pricing.map((item, index) => (
-            <div key={index}>
-                <strong>{item.item}</strong>: ${item.proposed_price}  
-                <br />
-                <em>{item.reasoning}</em>
-            </div>
-            ))}
-        
+        {Array.isArray(data.dynamic_pricing) ? (
+            data.dynamic_pricing.map((item, index) => (
+                <div key={index}>
+                    <strong>{item.item}</strong>: ${item.proposed_price}
+                    <br />
+                    <em>{item.reasoning}</em>
+                </div>
+        ))
+    ) : (
+        <p>No dynamic pricing data available.</p>
+    )}
     </div>
 
     <div className="metric-box">
