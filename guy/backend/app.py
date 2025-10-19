@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from gemini import generate_gemini_reply  # Import functions from gemini.py
+from gemini import generate_gemini_reply 
 from gemini import return_dynamic_prices
 from gemini import return_wholesale_orders
 from gemini import return_seasonal_items

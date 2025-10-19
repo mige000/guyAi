@@ -5,13 +5,12 @@ import mascotGif from "../assets/guygif.gif";
 function Dashboard() {
     const { inventory, budget, sales } = week1Data;
 
-    // Calculate individual item revenues
+
     const itemRevenues = sales.map((item) => ({
       product: item.product,
       revenue: item.current_price * item.units_sold,
     }));
 
-    // 🧮 Basic stats
     const totalSales = sales.reduce((sum, item) => sum + item.units_sold, 0);
     const totalRevenue = sales.reduce(
     (sum, item) => sum + item.current_price * item.units_sold,
@@ -45,7 +44,7 @@ function Dashboard() {
       console.error(err);
       const errorMsg = {
         sender: "bot",
-        text: "⚠️ Error: Could not connect to the backend.",
+        text: "Error",
       };
       setMessages((prev) => [...prev, errorMsg]);
     }

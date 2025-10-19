@@ -143,16 +143,6 @@ def return_seasonal_items():
 #current_profit, projected_profit, revenue_reasoning = calculate_revenue(business_data["sales"], business_data["budget"])
 
 
-
-
-
-
-
-####################
-
-
-
-
 # # EVERYTHING BELOW IS USED SOLELY FOR PRINTING IN TERMINAL!!! when you put it on the app ignore this section but take inspo for potential formatting. idk.
 # # report
 # print("\n--- RECOMMENDATIONS ---\n")

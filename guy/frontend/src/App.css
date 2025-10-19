@@ -88,7 +88,7 @@ body {
 }
 
  .chat-container h1 {
-  font-family: 'Press Start 2P', cursive; /* pixel font only for title */
+  font-family: 'Press Start 2P', cursive;
   font-size: 0.8rem;
   background: #0e2e85;
   color: white;
@@ -100,7 +100,7 @@ body {
 
 .chat-mascot {
   position: absolute;        
-  bottom: 427px;            
+  bottom: 500px;            
   right: 11px;              
   width: 80px;             
   height: auto;
@@ -245,7 +245,7 @@ button:hover {
 }
 
 .sales-box {
-  top: 320px;  /* adjust as needed to position below the revenue box */
+  top: 320px;
   left: 20px;
   width: 600px;
   background-color: #ffffff;
@@ -334,8 +334,8 @@ button:hover {
 .revenue-box,
 .sales-box,
 .metric-box {
-  width: 480px;                /* smaller */
-  min-height: 280px;           /* consistent box height */
+  width: 480px;                
+  min-height: 280px;           
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 12px;

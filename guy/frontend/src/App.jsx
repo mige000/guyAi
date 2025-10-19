@@ -8,7 +8,6 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const chatEndRef = useRef(null);
-  //const [currentPage, setCurrentPage] = useState("dashboard");
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -28,7 +27,7 @@ function App() {
       setMessages((prev) => [...prev, botMsg]);
     } catch (err) {
       console.error(err);
-      const errorMsg = { sender: "bot", text: "⚠️ Error: Could not connect to the backend." };
+      const errorMsg = { sender: "bot", text: "Error" };
       setMessages((prev) => [...prev, errorMsg]);
     }
   };

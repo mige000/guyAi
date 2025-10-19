@@ -1,19 +1,3 @@
-// import React from "react";
-
-// function Insights() {
-//   return (
-//     <div className="page-content">
-//       <h2>Insights</h2>
-//       <p>This page will show your business insights, analytics, and trends.</p>
-//       <div className="recommendation-box">
-//         <h2>Recommendations:</h2>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Insights;
-
 import { useEffect, useState } from "react";
 import "../App.css";
 
@@ -57,7 +41,6 @@ function Insights() {
 
     <div className="metric-box">
         <h2>Wholesale Suggestion</h2>
-        {/* <p className="metric-value">{data.return_wholesale_orders}</p> */}
         
         {Array.isArray(data.wholesale_suggestion) ? (
             data.wholesale_suggestion.map((item, index) => (
@@ -74,7 +57,6 @@ function Insights() {
 
     <div className="metric-box">
         <h2>Seasonal Suggestions</h2>
-        {/* <p className="metric-value">{data.return_seasonal_items}</p> */}
 
         {Array.isArray(data.seasonal_suggestions) ? (
             data.seasonal_suggestions.map((item, index) => (
@@ -86,11 +68,6 @@ function Insights() {
             <p>No seasonal suggestions available.</p>
           )}
     </div>
-
-    {/* <div className="metric-box">
-        <h2>Total Revenue</h2>
-        <p className="metric-value">${data.revenue}</p>
-    </div> */}
   </div>
     </>
   );
