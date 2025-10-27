@@ -2,7 +2,7 @@
 
 ### Activate backend
 
-`cd /dubhacks252/guyAi/guy/backend` <br>
+`cd /guyAi/guy/backend` <br>
 
 Go to [Google Gemini API Quick Start](https://aistudio.google.com/api-keys) and create a new API Key. <br>
 Then paste this command into your terminal replace YOUR_API_KEY_HERE with it.
